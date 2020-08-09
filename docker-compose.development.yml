@@ -1,0 +1,45 @@
+##
+# This docker-compose file extends the default docker-compose.yml with
+# development settings.
+# Use
+#   COMPOSE_FILE=docker-compose.yml:docker-compose.development.yml
+# in your .env file to apply these overrides.
+version: '2'
+services:
+  contract_observer:
+    restart: on-failure
+    volumes:
+      - .:/usr/src/app
+
+  etherdelta_observer:
+    restart: on-failure
+    volumes:
+      - .:/usr/src/app
+
+  huey_consumer:
+    restart: on-failure
+    volumes:
+      - .:/usr/src/app
+
+  ticker:
+    restart: on-failure
+    volumes:
+      - .:/usr/src/app
+
+  websocket_server:
+    restart: on-failure
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/src/app
+
+  order_refresh:
+    command: >
+      npx micro-dev index.js
+  
+  postgres:
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
