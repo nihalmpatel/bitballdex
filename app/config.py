@@ -31,7 +31,7 @@ with open('ethereumdex.abi.json') as f:
     ED_CONTRACT_ABI = json.load(f)
 
 ED_WS_SERVERS = [
-    "ws://dex-bitball.com:8080/socket.io/?EIO=3&transport=websocket"
+    "wss://api.bitball-dex.com/socket.io/?EIO=3&transport=websocket"
 ]
 
 POSTGRES_HOST = "postgres"
@@ -41,6 +41,6 @@ POSTGRES_PASSWORD = environ.get("POSTGRES_PASSWORD")
 
 HTTP_ORDERS_ENDPOINT_SECRET = environ.get("HTTP_ORDERS_ENDPOINT_SECRET")
 
-FRONTEND_CONFIG_FILE = "http://dex-bitball.com/config/main.json" # Config
+FRONTEND_CONFIG_FILE = "https://bitball-dex.com/config/main.json" # Config
 
 STOPPED_TOKENS = ()
