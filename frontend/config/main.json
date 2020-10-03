@@ -1,0 +1,39 @@
+{
+  "contractEtherDelta": "smart_contract/etherdelta.sol",
+  "contractToken": "smart_contract/token.sol",
+  "contractReserveToken": "smart_contract/reservetoken.sol",
+  "contractEtherDeltaAddrs": [
+    { "addr": "0x546264ba4099b7e1f01632fe83a71a1ca2fa77b6", "info": "SMART CONTRACT v1.0" }
+  ],
+  "ethTestnet": false,
+  "ethChainId": 1,
+  "ethProvider": "http://localhost:8545",
+  "ethGasPrice": 4000000000,
+  "ethAddr": "0x0000000000000000000000000000000000000000",
+  "ethAddrPrivateKey": "",
+  "gasApprove": 250000,
+  "gasDeposit": 250000,
+  "gasWithdraw": 250000,
+  "gasTrade": 250000,
+  "gasOrder": 250000,
+  "minOrderSize": 0.00001,
+  "socketServer": "https://api.bitball-dex.com",
+  "userCookie": "EtherDelta",
+  "eventsCacheCookie": "EtherDelta_eventsCache",
+  "ordersCacheCookie": "EtherDelta_ordersCache",
+  "etherscanAPIKey": "7NBXZZCKBEM8K1FCZ4ZB2W3JZV4RM1FEBR",
+  "ledgerPath": "m/44'/60'/0'/0",
+  "bases": [
+    { "addr": "0x0000000000000000000000000000000000000000", "name": "ETH", "fullName": "Ethereum", "decimals": 18 }
+  ],
+  "tokens": [
+    { "addr": "0x06e0feb0d74106c7ada8497754074d222ec6bcdf", "name": "BTB", "fullName": "BitBall", "decimals": 18, "img": "bozz-token.png", "website": "https://dex.com" },
+    { "addr": "0x73c9275c3a2dd84b5741fd59aebf102c91eb033f", "name": "BTRS", "fullName": "BitBall Treasure", "decimals": 18 },
+    { "addr": "0xdac17f958d2ee523a2206206994597c13d831ec7", "name": "USDT", "fullName": "Tether", "decimals": 6 },
+    { "addr": "0x514910771af9ca656af840dff83e8264ecf986ca", "name": "LINK", "fullName": "ChainLink Token", "decimals": 18 },
+    { "addr": "0xb8c77482e45f1f44de1745f52c74426c631bdd52", "name": "BNB", "fullName": "BNB", "decimals": 18 },
+    { "addr": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "name": "USDC", "fullName": "USD Coin", "decimals": 6 }
+  ],
+
+  "defaultPair": { "token": "BTB", "base": "ETH" }
+}
